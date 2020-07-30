@@ -1,0 +1,136 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-size: 15px;
+}
+
+#header-title {
+  font-size: 18px;
+}
+
+.myName {
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.header {
+  background-color: teal;
+  color: white;
+  line-height: 70px;
+  height: 70px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  height: calc(100vh - 70px);
+  padding: 20px 20px;
+}
+
+.title {
+  color: #444;
+  margin-top: 20px;
+}
+
+.form input[type="text"] {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  margin: 25px 10px 25px 1px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form input[type="submit"] {
+  border: none;
+  background-color: #444;
+  padding: 9px 12px;
+  border-radius: 5px;
+  color: white;
+  width: 20%;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #222;
+}
+
+.list-group {
+  margin: 25px 0;
+  list-style: none;
+}
+
+.list-item {
+  background-color: #eee;
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.list-item:hover {
+  background-color: #e4e4e4;
+}
+
+button {
+  float: left;
+  border: none;
+  background-color: red;
+  padding: 5px 5px;
+  border-radius: 10px;
+  color: white;
+  width: 30px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+@media (min-width: 500px) {
+  .container {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+
+  * {
+    font-size: 13px;
+  }
+  .form input[type="text"] {
+    width: 70%;
+  }
+  .form input[type="submit"] {
+    font-size: 12px;
+  }
+
+  #header-title {
+    font-size: 15px;
+  }
+
+  .myName {
+    font-size: 10px;
+  }
+}

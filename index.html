@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Training</title>
+        <link rel="stylesheet" href="Styles/style.css" />
+    </head>
+    <body>
+      <header id="main-header" class="header">
+        <div class="container">
+          <h1 id="header-title">قائمة الاعمال | <span class="myName">بواسطة : علي مرتضى</span></h1>
+        </div>
+      </header>
+      <div class="container">
+       <div id="main" class="card">
+        <h2 class="title">إضافة عنصر جديد ..</h2>
+        <form id="form" class="form">
+          <input type="text" class="input-text" id="inputText" onsubmit="create">
+          <input type="submit" id = "submit" class="submit" value="إضافة">
+        </form>
+        <h2 class="title">العناصر:</h2>
+        <ul id="items" class="list-group">
+        </ul>
+       </div>
+      </div>
+        <script src="main.js"></script>
+    </body>
+</html>
